@@ -19,13 +19,16 @@
     "test": "react-app-rewired test"
   },
   "eslintConfig": {
-    "extends": "react-app",
-    "babel-plugin-import": "^1.11.0"
+    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-plugin-import": "^1.11.0",
+    "react-app-rewired": "^1.6.2"
+  }
 }
