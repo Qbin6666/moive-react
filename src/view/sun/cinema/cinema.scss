@@ -1,0 +1,75 @@
+.cinema {
+  width: 100%;
+   ul li.cinema-item{
+     width: 3.50rem;
+     margin-left: 0.15rem;
+     padding:0.13rem 0.15rem 0.13rem 0;
+     border-bottom: 1px solid #F0F0F0;
+    h2 {
+      font-size:0.16rem;
+      font-weight: normal;
+      color:#000;
+      i,span {
+        color:#F03D37;
+      }
+      i {
+        font-size:0.18rem;
+        padding-left:0.03rem;
+      }
+      span {
+        font-size:0.12rem;
+      }
+    }
+    .site {
+      display: flex;
+      margin:0.12rem 0 0.1rem 0;
+      font-size:0.12rem;
+      color:#666666;
+      width: 3rem;
+      // text-overflow: ellipsis;
+      // overflow: hidden;
+      .siteP {
+        width: 2.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      span{
+        margin-left: 0.2rem;
+      }
+    }
+    .label-block {
+      display: flex;
+      // padding-bottom: 0.1rem;
+      div {
+        padding:0.01rem 0.03rem;
+        border: 1px solid #589DAF;
+        color:#589DAF;
+        border-radius: 0.02rem;
+        font-size:0.12rem;
+        margin:0 0.02rem;
+      }
+      .snack,.vipTag {
+        color:#FF9900;
+        border:1px solid#FF9900;
+      }
+    }
+    p.sale {
+      font-size:0.12rem;
+      margin-top:0.1rem;
+      color:#999999;
+      img {
+        width: 0.16rem;
+        // display: inline-block;
+        float: left;
+        margin-right: 0.05rem;
+      }
+    }
+  }
+}
+.none {
+  display: none !important;
+}
+.move {
+  text-align: center;
+}

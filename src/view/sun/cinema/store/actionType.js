@@ -1,0 +1,1 @@
+export const SET_CITY_CINEMA = 'SET_CITY_CINEMA';
