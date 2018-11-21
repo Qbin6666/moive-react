@@ -9,9 +9,11 @@ const SelectCinemaUI = (props) => {
   return (
     <Fragment>
         <header>
+
           <h1>
-          <span className="iconfont icon-fanhui-copy"></span>
-          {props.movie.nm}</h1>
+            <span className="iconfont icon-fanhui-copy"></span>
+            {props.movie.nm}
+          </h1>
         </header>
         <div className='detail'>
           <img src={props.movie.img} alt=''/>
