@@ -21,7 +21,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
-          <Route path="/SelectCinema/42964" component={SelectCinema} />
+          <Route path="/SelectCinema/:id" component={SelectCinema} />
           <Route path="/SelectSeat" component={SelectSeat} />
           {/* <h1>lalalallalal</h1> */}
           {/* <HomeUI></HomeUI> */}
