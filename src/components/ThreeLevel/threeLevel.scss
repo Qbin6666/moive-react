@@ -1,0 +1,121 @@
+.threelevel {
+  background: #ffffff;
+  .list {
+    position: fixed;
+    width: 3.63rem;
+    height: 0.41rem;
+    background: #fff;
+    border-bottom: 1px solid #F0F0F0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#777777;
+    div {
+      position: relative;
+      text-align: center;
+      flex: 1;
+      background: #ffffff;
+      .angle {
+        display: inline-block;
+        position: absolute;
+        top: 0.05rem;
+        width: 0;
+        height: 0;
+        margin-left: 0.06rem;
+        border: 0.04rem solid transparent;
+        border-top-color: #b0b0b0;
+      }
+    }
+    div.brand {
+      border-right: 1px solid #F0F0F0;
+      border-left: 1px solid #F0F0F0;
+    }
+  }
+  .allCityList {
+      height: 4.5rem;
+      position: fixed;
+      background: #fff;
+      ul{
+      display: flex;
+      // width: 100%;
+      width: 3.58rem;
+      li{
+        flex: 1;
+        text-align: center;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        color:#777777;
+        background: #fff;
+      }
+    }
+  }
+  .listBox{
+    height: 0.41rem;
+  }
+}
+.businessList,
+.subwayList {
+  display: flex;
+  height: 4rem;
+  .businessNav,
+  .subwayNav {
+    // width: 1.2rem;
+    width: 32%;
+    // padding:0 0.1rem;
+  }
+  .businessInfo,
+  .subwayInfo {
+    width: 68%;
+    background: #F5F5F5;
+  }
+}
+.businessInfo,.subwayInfo {
+  overflow: scroll;
+  div{
+    a{
+      // text-indent: 2em;
+      display: flex;
+      justify-content: space-between;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      width: 100%;
+      color:#333333;
+      box-sizing: border-box;
+      padding:0 0.2rem 0rem 0.3rem;
+      .count {
+        color:#ABADB0;
+      }
+    }
+  }
+}
+.businessInfo::-webkit-scrollbar,
+.subwayInfo::-webkit-scrollbar {
+  display:none
+}
+
+
+.item {
+  width: 100%;
+  height: 0.40rem;
+  text-align: center;
+  line-height: 0.4rem;
+  background: #ffffff;
+  color:#7F7F7F;
+}
+.item:first-of-type{
+  background: #F5F5F5;
+  color:#f03d37;
+}
+.active {
+      border-bottom-color: #f03d37 !important;
+      border-top-color: transparent !important;
+      top: 0.02rem !important;
+}
+
+.li-active {
+  color:#f03d37 !important;
+  border-bottom: 2px solid #f03d37;
+}
+.none {
+  display: none !important;
+}

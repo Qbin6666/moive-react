@@ -41,9 +41,9 @@ const SelectCinemaUI = (props) => {
           </ul>
         </div>
         <div className='nav-warp'>
-          <div className='item'>全城<span></span></div>
-          <div className='item'>品牌<span></span></div>
-          <div className='item'>特色<span></span></div>
+          <div className='item1'>全城<span></span></div>
+          <div className='item1'>品牌<span></span></div>
+          <div className='item1'>特色<span></span></div>
         </div>
         {
         props.list.map((item,index) => (
