@@ -2,9 +2,14 @@
 import React , {Fragment} from 'react';
 const SelectSeatUI = (props) => {
   return (
-    <Fragment>
-        1
-    </Fragment>
+      <Fragment>
+        <header>
+          <h1>
+            <span className="iconfont icon-fanhui-copy"></span>
+            东海国际影城
+          </h1>
+        </header>
+      </Fragment>
   )
 }
 

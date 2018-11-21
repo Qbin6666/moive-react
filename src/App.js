@@ -10,7 +10,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
-          <Route path="/SelectCinema/341213" component={SelectCinema} />
+          <Route path="/SelectCinema/42964" component={SelectCinema} />
           <Route path="/SelectSeat" component={SelectSeat} />
         </Fragment>
       </Router>

@@ -7,16 +7,15 @@ header{
   h1{
     font-size: 18px;
     font-weight: 400;
-    display: flex;
-    align-items: center;
     line-height: 50px;
+    text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     .icon-fanhui-copy{
+      position: absolute;
       font-size: 35px;
-      margin-right: 50px;
-      margin-left: 10px;
+      left: 0;
     }
   }
 }
