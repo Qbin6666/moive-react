@@ -1,12 +1,14 @@
 import './screen.scss'
 import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
+import HomeUI from '../HomeUI'
 import Max from "../image/MAX.png"
 import Max3d from '../image/3d.png';
 const Screen = (props) => {
   // console.log(props.List)
   return (
     <Fragment>
+      <HomeUI></HomeUI>
       <div className='list-title'>
         <p className='list-p'>近期最受期待</p>
         <div className='list-box'>

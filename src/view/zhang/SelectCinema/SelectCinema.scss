@@ -1,0 +1,221 @@
+header{
+  height: 0.505rem;
+  color: #fff;
+  background: #e54847;
+  border-bottom: 1px solid #e54847;
+  position: relative;
+  h1{
+    font-size: 0.18rem;
+    font-weight: 400;
+    line-height: 0.5rem;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    .icon-fanhui-copy{
+      position: absolute;
+      font-size: 0.35rem;
+      left: 0;
+    }
+  }
+}
+.detail{
+  height: 1.5rem;
+  padding: 0.19rem 0.3rem 0.19rem 0.15rem;
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  background-image: url('./images/duye.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+  background-position-x: 10%;
+  background-size: 1000%;
+  img{
+    height:100%;
+  }
+  .content{
+    overflow-x: hidden;
+    margin-left: 0.125rem;
+    line-height: 1;
+    color: #fff;
+    flex: 1;
+    h1{
+      font-size: 0.2rem;
+      margin-top: 2px;
+      font-weight: 700;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .pingfen{
+      font-size: 0.18rem;
+      font-weight: 700;
+      color: #fc0;
+      margin-top: 0.11rem;
+      span{
+        margin-top: 0.1rem;
+        font-size: 0.12rem;
+        color: #fff;
+        opacity: .8;
+      }
+    }
+    P{
+      margin-top: 0.1rem;
+      font-size: 0.12rem;
+      color: #fff;
+      opacity: .8;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      img{
+        width: 0.42rem;
+        display: inline-block;
+        opacity: .85;
+        padding-left: 4px;
+      }
+    }
+  }
+  .arrow-g{
+    position: absolute;
+    width: 0.1rem;
+    right: 0.15rem;
+    top: 50%;
+    transform: translateY(-50%);
+    img{
+      width: 100%;
+    }
+  }
+}
+.showdays ul::-webkit-scrollbar {display:none}
+.showdays{
+  width: 100%;
+  overflow-x: scroll;
+  height: 0.45rem;
+  font-size: 0.14rem;
+  color: #777;
+  ul{
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 0.45rem;
+    li{
+      position: relative;
+      display: inline-block;
+      width: 1.15rem;
+      line-height: 0.43rem;
+      margin-left: 4.5px;
+      font-size: 0.14rem;
+      text-align: center;
+    }
+  }
+}
+.nav-warp{
+  width: 100%;
+  height: 0.4rem;
+  display: flex;
+  font-size: 0.14rem;
+  color: #777;
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+  .item1{
+    flex: 1;
+    text-align: center;
+    line-height: 0.2rem;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.13rem;
+    text-overflow: ellipsis;
+    border-right: 1px solid #f1f1f1;
+    margin: 0.1rem 0;
+    span{
+      display: inline-block;
+      position: absolute;
+      top: 0.08rem;
+      width: 0;
+      height: 0;
+      margin-left: 4px;
+      border: 4px solid transparent;
+      border-top-color: #b0b0b0;
+    }
+  }
+}
+.list-warp{
+  .list-item{
+    padding: 0.13rem 0.15rem 0.13rem 0;
+    margin-left: 0.15rem;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    .title{
+      line-height: 1.5;
+      .title-top{
+        height: 0.23rem;
+        line-height: 0.23rem;
+        font-size: 0.16rem;
+        color: #000;
+        .price-block{
+          padding-top: 0.09rem;
+          padding-left: 3px;
+          .price{
+            font-size: 0.18rem;
+            color: #f03d37;
+          }
+          .q{
+            margin-left: 3px;
+            font-size: 0.11rem;
+            color: #f03d37;
+          }
+        }
+      }
+      .title-mid{
+        margin-top: 6px;
+        font-size: 0.13rem;
+        color: #666;
+        display: flex;
+        .local{
+          flex:1;
+        }
+        .distance{
+          margin-left: 5px;
+        }
+      }
+      .title-btn{
+        height: 0.17rem;
+        line-height: 0.17rem;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        div{
+          position: relative;
+          display: inline-block;
+          padding: 0 3px;
+          height: 0.17rem;
+          line-height: 0.15rem;
+          border-radius: 2px;
+          font-size: 0.12rem;
+          margin-right: 0.05rem;
+        }
+        .allowRefund{
+          color: #589daf;
+          border: 1px solid #589daf;
+        }
+        .snack{
+          color: #f90;
+          border: 1px solid #f90;
+        }
+        .n{
+          display: none;
+        }
+      }
+    }
+    .buttom{
+      padding: 0 0.15rem 0 0;
+      margin-right: -0.15rem;
+      line-height: 1.5;
+      span{
+        font-size: 0.12rem;
+        color: #999;
+      }
+    }
+  }
+}
