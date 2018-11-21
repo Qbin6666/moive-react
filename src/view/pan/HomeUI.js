@@ -8,7 +8,10 @@ const HomeUI = (props) => {
     <div className='cat-home'>
       {/* <div className='header'>猫眼电影</div> */}
       <div className='z-top'>
-        <p>深圳</p>
+        <div>
+            <NavLink to='/city'><p>深圳</p></NavLink>
+            <span></span>
+        </div>
         <ul>
             <li><NavLink exact to='/'>正在热映</NavLink> </li>
             <li><NavLink  to='/screen'>即将上映</NavLink></li>

@@ -10,10 +10,9 @@ import SelectSeat from './view/zhang/SelectSeat/SelectSeat';
 // import HomeUI from '../src/view/pan/HomeUI';
 import List from './view/pan/lists'
 import Screen from './view/pan/Screen/Screen'
-
-
 import Cinema from './view/sun/cinema/Cinema'
-import ThreeLevel from './components/ThreeLevel/ThreeLevel'
+// import ThreeLevel from './components/ThreeLevel/ThreeLevel'
+import City from './view/pan/City/City'
 
 const App = () => {
   // console.log(store)
@@ -23,12 +22,14 @@ const App = () => {
         <Fragment>
           <Route path="/SelectCinema/:id" component={SelectCinema} />
           <Route path="/SelectSeat" component={SelectSeat} />
+          <Router path='/city' component={City} />
           {/* <h1>lalalallalal</h1> */}
           {/* <HomeUI></HomeUI> */}
           {/* <ThreeLevel></ThreeLevel> */}
           <Route path='/cinema' component={Cinema}></Route>
           <Route path='/' exact component={List} />
           <Route path='/screen' component={Screen} />
+
         </Fragment>
       </Router>
    </Provider>
