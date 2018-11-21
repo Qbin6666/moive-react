@@ -12,8 +12,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
-          <HomeUI>
-          </HomeUI>
+          <HomeUI></HomeUI>
           <Route path='/' exact component={List} />
           <Route path='/screen' component={Screen} />
         </Fragment>

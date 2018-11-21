@@ -6,7 +6,7 @@ const HomeUI = (props) => {
   return (
     <Fragment>
     <div className='cat-home'>
-      <div className='header'>猫眼电影</div>
+      {/* <div className='header'>猫眼电影</div> */}
       <div className='z-top'>
         <p>深圳</p>
         <ul>

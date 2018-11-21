@@ -6,6 +6,7 @@ import Max3d from './image/3d.png';
 const Lists = (props) => {
   // console.log(props)
   return (
+    
     <ul className="main-block">
       {
         props.List.movieList.map((item, index) => {
