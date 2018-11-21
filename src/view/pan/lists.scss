@@ -1,0 +1,105 @@
+.main-block {
+  padding-left: 0.14rem;
+  li {
+    a {
+      display: flex;
+      color: #666666;
+      font-size: 0.13rem;
+      .main-block-img{
+        margin-top:0.14rem;
+        width: 0.65rem;
+        img {
+          width: 100%;
+        }
+      }
+      .z-content {
+        display: flex;
+        align-items: center;
+        margin-left: 0.08rem;
+        border-bottom: #e6e2e2 1px solid;
+        padding: 0.12rem 0.14rem 0.12rem 0;
+        .z-content-left{
+          width: 2.02rem;
+          .first-p {
+            margin-top: 0.07rem;
+            color: #333;
+            display: flex;
+            p {
+                font-weight: 700;
+                font-size: 0.18rem;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                padding-right: 0.05rem;
+            }
+            span {
+              display: block;
+              width: 0.43rem;
+              height: 0.17rem;
+              img {
+                height: 0.15rem;;
+              }
+            }
+          }
+          .last-p {
+            margin-top: 0.07rem;
+            color: #666;
+            font-size: 0.13rem;
+            p{
+              margin-top:0.06rem;
+              width: 2.02rem;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              height: 0.15rem;
+              line-height: 0.15rem;
+              .color {
+                  font-weight: 700;
+                  color: #faaf00;
+                  font-size: 15px;
+                  margin-left: 0.04rem;
+              }
+            }
+          }
+        }
+        .z-content-right {
+          width: 47px;
+          height: 27px;
+          line-height: 28px;
+          text-align: center;
+          box-sizing: border-box;
+          background-color: #f03d37;
+          color: #fff;
+          border-radius: 4px;
+          white-space: nowrap;
+          font-size: 12px;
+          cursor: pointer;
+          margin-left: 0.08rem;
+        }
+      }
+    }
+  }
+  .addList {
+    color: #666;
+    text-align: center;
+    font-size: 0.15rem;
+    cursor: pointer;
+  }
+}
+.activeOptiong{
+  background: #3c9fe6;
+  width: 47px;
+  height: 27px;
+  line-height: 28px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 0.08rem;
+}
+.hide {
+  display: none !important;
+}

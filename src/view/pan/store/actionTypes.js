@@ -1,0 +1,4 @@
+export const INIT_LIST = 'INIT_LIST';
+export const INIT_LIST_SCREEN = 'INIT_LIST_SCREEN';
+export const INIT_LIST_SCREEN_LIST = 'INIT_LIST_SCREEN_LIST';
+export const INIT_LIST_TWO = 'INIT_LIST_TWO';

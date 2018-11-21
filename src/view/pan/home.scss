@@ -1,0 +1,55 @@
+.cat-home {
+  .header {
+    background: red;
+    color: white;
+    height: 0.5rem;
+    width: 100%;
+    text-align: center;
+    line-height: 0.5rem;
+  }
+  .z-top {
+    font-size: 0.15rem;
+    display:flex;
+    height: 0.44rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:0.13rem;
+    border-bottom: 1px solid #e6e6e6;
+    ul {
+      display: flex;
+      li {
+      // color: #ef4238;
+      font-weight: 700;
+      height: 0.44rem;
+      line-height: 0.44rem;
+      box-sizing: border-box;
+      a {
+        color: #666666;
+        display: block;
+        height: 100%;
+        padding: 0 0.12rem;
+
+      }
+      .active {
+        color: #ef4238;
+        border-bottom: 0.02rem solid #ef4238;
+
+      }
+      }
+    }
+    p {
+      color: #666666;
+    }
+    .p-img {
+      height: 0.4rem;
+      width: 0.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+      width: 0.2rem;
+      }
+    }
+  }
+
+}
