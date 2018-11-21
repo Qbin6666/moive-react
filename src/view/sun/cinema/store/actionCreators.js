@@ -12,7 +12,7 @@ export const setCityCinecma = () => {
       ,{
       params: {
         // ci:30
-        day:'2018-11-20',
+        day:'2018-11-21',
         offset:0,
         limit: limit,
         districtId:-1,

@@ -8,6 +8,7 @@ import './styles/base.scss';
 
 
 import Cinema from './view/sun/cinema/Cinema'
+import ThreeLevel from './components/ThreeLevel/ThreeLevel'
 
 const App = () => {
   // console.log(store)
@@ -16,6 +17,7 @@ const App = () => {
       <Router>
         <Fragment>
         {/* <h1>lalalallalal</h1> */}
+        <ThreeLevel></ThreeLevel>
         <Route path='/cinema' component={Cinema}></Route>
         </Fragment>
       </Router>
