@@ -1,0 +1,222 @@
+header{
+  height: 50.5px;
+  color: #fff;
+  background: #e54847;
+  border-bottom: 1px solid #e54847;
+  position: relative;
+  h1{
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    .icon-fanhui-copy{
+      font-size: 35px;
+      margin-right: 50px;
+      margin-left: 10px;
+    }
+  }
+}
+.detail{
+  height: 150px;
+  padding: 19px 30px 19px 15px;
+  box-sizing: content-box;
+  position: relative;
+  display: flex;
+  background-image: url('./images/duye.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+  background-position-x: 10%;
+  background-size: 1000%;
+  img{
+    height:100%;
+  }
+  .content{
+    overflow-x: hidden;
+    margin-left: 12.5px;
+    line-height: 1;
+    color: #fff;
+    flex: 1;
+    h1{
+      font-size: 20px;
+      margin-top: 2px;
+      font-weight: 700;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .pingfen{
+      font-size: 18px;
+      font-weight: 700;
+      color: #fc0;
+      margin-top: 11px;
+      span{
+        margin-top: 10px;
+        font-size: 12px;
+        color: #fff;
+        opacity: .8;
+      }
+    }
+    P{
+      margin-top: 10px;
+      font-size: 12px;
+      color: #fff;
+      opacity: .8;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      img{
+        width: 42px;
+        display: inline-block;
+        opacity: .85;
+        padding-left: 4px;
+      }
+    }
+  }
+  .arrow-g{
+    position: absolute;
+    width: 10px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    img{
+      width: 100%;
+    }
+  }
+}
+.showdays ul::-webkit-scrollbar {display:none}
+.showdays{
+  width: 100%;
+  overflow-x: scroll;
+  height: 45px;
+  font-size: 14px;
+  color: #777;
+  ul{
+    white-space: nowrap;
+    overflow-x: scroll;
+    height: 45px;
+    li{
+      position: relative;
+      display: inline-block;
+      width: 115px;
+      line-height: 43px;
+      margin-left: 4.5px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+.nav-warp{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  font-size: 14px;
+  color: #777;
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+  .item{
+    flex: 1;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    border-right: 1px solid #f1f1f1;
+    margin: 10px 0;
+    span{
+      display: inline-block;
+      position: absolute;
+      top: 8px;
+      width: 0;
+      height: 0;
+      margin-left: 4px;
+      border: 4px solid transparent;
+      border-top-color: #b0b0b0;
+    }
+  }
+}
+.list-warp{
+  .list-item{
+    padding: 13px 15px 13px 0;
+    margin-left: 15px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    .title{
+      line-height: 1.5;
+      .title-top{
+        height: 23px;
+        line-height: 23px;
+        font-size: 16px;
+        color: #000;
+        .price-block{
+          padding-top: 9px;
+          padding-left: 3px;
+          .price{
+            font-size: 18px;
+            color: #f03d37;
+          }
+          .q{
+            margin-left: 3px;
+            font-size: 11px;
+            color: #f03d37;
+          }
+        }
+      }
+      .title-mid{
+        margin-top: 6px;
+        font-size: 13px;
+        color: #666;
+        display: flex;
+        .local{
+          flex:1;
+        }
+        .distance{
+          margin-left: 5px;
+        }
+      }
+      .title-btn{
+        height: 17px;
+        line-height: 17px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        div{
+          position: relative;
+          display: inline-block;
+          padding: 0 3px;
+          height: 17px;
+          line-height: 15px;
+          border-radius: 2px;
+          font-size: 12px;
+          margin-right: 5px;
+        }
+        .allowRefund{
+          color: #589daf;
+          border: 1px solid #589daf;
+        }
+        .snack{
+          color: #f90;
+          border: 1px solid #f90;
+        }
+        .n{
+          display: none;
+        }
+      }
+    }
+    .buttom{
+      padding: 0 15px 0 0;
+      margin-right: -15px;
+      line-height: 1.5;
+      span{
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+}
