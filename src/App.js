@@ -3,13 +3,15 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import store from './store';
 import { Provider } from 'react-redux';
 import './styles/base.scss';
-
+import SelectCinema from './view/zhang/SelectCinema/SelectCinema';
+import SelectSeat from './view/zhang/SelectSeat/SelectSeat';
 const App = () => {
   return (
-    <Provider>
+    <Provider store={store}>
       <Router>
         <Fragment>
-        <h1>lalalallalal</h1>        
+          <Route path="/SelectCinema/341213" component={SelectCinema} />
+          <Route path="/SelectSeat" component={SelectSeat} />
         </Fragment>
       </Router>
     </Provider>
