@@ -1,20 +1,18 @@
 .cat-home {
-  .header {
-    background: red;
-    color: white;
-    height: 0.5rem;
-    width: 100%;
-    text-align: center;
-    line-height: 0.5rem;
-  }
+    height: 50px;
   .z-top {
     font-size: 0.15rem;
-    display:flex;
+    display: flex;
     height: 0.44rem;
     justify-content: space-between;
     align-items: center;
-    padding-left:0.13rem;
+    padding-left: 0.13rem;
     border-bottom: 1px solid #e6e6e6;
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    z-index: 1000;
     ul {
       display: flex;
       li {
@@ -26,6 +24,7 @@
         color: #666666;
         display: block;
         padding: 0 0.12rem;
+        margin: 0 0.1rem;
       }
       .active {
         color: #ef4238;
@@ -66,5 +65,4 @@
       }
     }
   }
-
 }

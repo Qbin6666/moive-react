@@ -1,16 +1,15 @@
 import React ,{Fragment}from 'react';
 import { NavLink } from 'react-router-dom';
-import HomeUI from './HomeUI';
 import './lists.scss';
+import HomrUI from './HomeUI'
 import Max from './image/MAX.png';
 import Max3d from './image/3d.png';
 const Lists = (props) => {
-  // console.log(props)
+  // console.log(props.List.movieList)
   return (
-
     <Fragment>
-      <HomeUI></HomeUI>
-      <ul className="main-block">
+      <HomrUI></HomrUI>
+      <ul className="main-block" id="main-ul">
         {
           props.List.movieList.map((item, index) => {
             return (
@@ -28,7 +27,16 @@ const Lists = (props) => {
                         /></span>
                       </div>
                       <div className="last-p">
-                        <p><span>观众评</span><span className="color">{item.sc}</span></p>
+                        <p className={item.globalReleased === false ? "hide" : ""}>
+                          <span>{item.sc === 0 ? "暂无评分" : '观众评'}</span>
+                          <span className={ item.sc === 0 ? "hide":"color"}>
+                            {String(item.sc).length === 1 ? item.sc + "." + 0 : item.sc }
+                          </span>
+                        </p>
+                        <p className={item.globalReleased === true ? "hide" : ""}>
+                          <span className="color">{item.wish}</span>
+                          <span>人想看</span>
+                        </p>
                         <p>主演: {item.star}</p>
                         <p>{item.showInfo}</p>
                       </div>
@@ -42,10 +50,11 @@ const Lists = (props) => {
             )
           })
         }
-        <li className="addList" onClick={() => {
-          props.addClickLisk(props.List.movieIds)
-        }}>加载更多...</li>
+        <li className="addList"
+        id="add"
+         >加载更多...</li>
       </ul>
+      <div id="scrollHide"></div>
     </Fragment>
   )
 }

@@ -47,7 +47,7 @@ const SelectCinemaUI = (props) => {
         </div>
         {
         props.list.map((item,index) => (
-        <div className='list-warp'>
+        <div className='list-warp' key={index}>
           <div className='list-item'>
             <div className='title'>
               <div className='title-top'>

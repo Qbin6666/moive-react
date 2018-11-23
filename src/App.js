@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { HashRouter as Router, Route,NavLink } from 'react-router-dom';
+import { HashRouter as Router, Route} from 'react-router-dom';
 import store from './store';
 import { Provider } from 'react-redux';
 
@@ -22,14 +22,13 @@ const App = () => {
         <Fragment>
           <Route path="/SelectCinema/:id" component={SelectCinema} />
           <Route path="/SelectSeat" component={SelectSeat} />
-          <Router path='/city' component={City} />
           {/* <h1>lalalallalal</h1> */}
-          {/* <HomeUI></HomeUI> */}
           {/* <ThreeLevel></ThreeLevel> */}
           <Route path='/cinema' component={Cinema}></Route>
+          {/* <HomeUI></HomeUI> */}
           <Route path='/' exact component={List} />
           <Route path='/screen' component={Screen} />
-
+          <Route path='/city' component={City} />
         </Fragment>
       </Router>
    </Provider>
