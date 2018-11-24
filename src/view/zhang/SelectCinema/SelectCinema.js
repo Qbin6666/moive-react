@@ -28,7 +28,7 @@ import { connect } from 'react-redux';
 import SelectCinemaUI from './SelectCinemaUI';
 import { initListAsync,initMovieAsync } from './store/actionCreators';
 import store from '../../../store/index'
-
+import {Toast} from 'antd-mobile'
 class SelectCinema extends Component {
   constructor(props) {
     super(props);
@@ -40,7 +40,7 @@ class SelectCinema extends Component {
     )
   }
   componentDidMount() {
-
+    Toast.loading('加载中',false);
     store.dispatch(initListAsync());
     store.dispatch(initMovieAsync(this.pid));
   }

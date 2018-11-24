@@ -1,7 +1,7 @@
 // 这个文件就是一些 动作生成器 （action creator） 的  集合
 import { INIT_LIST, INIT_MOVIE} from './actionTypes';
 import axios from 'axios';
-
+import {Toast} from 'antd-mobile'
 /**
  * 初始化的一个 动作生成器
  * @param {Array} list 初始化的数据
@@ -45,6 +45,7 @@ export const initMovieAsync = (pid) => {
     const apiProxy = 'https://bird.ioliu.cn/v1/?url='
     var url = `m.maoyan.com/ajax/detailmovie?movieId=${pid}`
     axios.get(apiProxy + url).then(result=>{
+      Toast.hide()
       var movieList = result.data.detailMovie
       console.log(movieList)
       movieList.img = movieList.img.split('w.h').join('128.180')
