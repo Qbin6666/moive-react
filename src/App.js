@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { HashRouter as Router, Route} from 'react-router-dom';
+import { HashRouter as Router ,Route} from 'react-router-dom';
 import store from './store';
 import { Provider } from 'react-redux';
 
@@ -15,6 +15,12 @@ import Cinema from './view/sun/cinema/Cinema'
 import City from './view/pan/City/City'
 import Order from './view/pan/Order/Order'
 
+import Preview from './view/qiu/preview/preview.js';
+import  Register from './view/qiu/register/register.js';
+import  Login from './view/qiu/login/login.js';
+import Mytype from './view/qiu/mytype/mytype.js';
+import Header from "./components/Header";
+import Footer from './components/Footer';
 const App = () => {
   // console.log(store)
   return (
@@ -31,6 +37,13 @@ const App = () => {
           <Route path='/screen' component={Screen} />
           <Route path='/city' component={City} />
           <Route path='/order' component={Order} />
+          {/* <Header/>
+           
+          <Footer/> */}
+          <Route path='/Preview/:id' component={Preview}/>
+          <Route path='/register' component={Register}/>
+          <Route path='/login' component={Login}/>
+          <Route path='/mytype' component={Mytype}/>
         </Fragment>
       </Router>
    </Provider>
