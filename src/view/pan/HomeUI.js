@@ -21,7 +21,7 @@ class HomeUI extends Component {
               <span></span>
             </div>
             <ul>
-              <li><NavLink exact to='/'>正在热映</NavLink> </li>
+              <li><NavLink exact to='/home'>正在热映</NavLink> </li>
               <li><NavLink to='/screen'>即将上映</NavLink></li>
             </ul>
             <p className="p-img"><img src={search} alt="" /></p>

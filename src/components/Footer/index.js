@@ -11,16 +11,16 @@ class Footer extends Component{
 
     render(){
         return(
-            <div className='footer'>
+            <div className='footer1'>
                <ul className="dibu">
                    <li>
-                   <NavLink to="/" exact>
+                   <NavLink to="/home" exact>
                         <i className="iconfont icon-dianying"></i>
                         <span>电影</span>
                     </NavLink>
                    </li>
                    <li>
-                   <NavLink to="/123">
+                   <NavLink to="/Cinema">
                         <i className="iconfont icon-yingyuan"></i>
                         <span>影院</span>
                     </NavLink>

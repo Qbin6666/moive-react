@@ -10,6 +10,7 @@ import users from '../images/user.jpg'
 import yinyue from '../images/yinyue.png'
 import yidao from '../images/yidao.png'
 import axios from 'axios'
+import {Toast} from 'antd-mobile'
 class Preview extends Component{
     constructor(props) {
         super(props);
@@ -33,7 +34,9 @@ class Preview extends Component{
         return(
             <Fragment>
             <div className='headers'>
-                <i className="iconfont icon-fanhui-copy"></i>
+                <NavLink to={`/SelectCinema/${this.pid}`}>
+                    <i className="iconfont icon-fanhui-copy"></i>
+                </NavLink>
                 <h2 style={{
                 color:' #f4f4f4'
                 }}>
@@ -312,6 +315,7 @@ class Preview extends Component{
         const apiProxy = 'https://bird.ioliu.cn/v1/?url='
         var url = `http://m.maoyan.com/ajax/detailmovie?movieId=${pid}`
         axios.get(apiProxy + url).then(result=>{
+            Toast.hide()
             let newList = JSON.parse(JSON.stringify(result.data.detailMovie));
             newList.img = newList.img.split("w.h").join("120.180")
             let newImg = [];
@@ -345,6 +349,7 @@ class Preview extends Component{
         })
     }
     componentDidMount(){
+        Toast.loading('加载中',false);
         this.listshow(this.pid);
         this.listMovie()
         console.log(this.pid)

@@ -53,7 +53,7 @@ class Register extends Component {
                     <h3>猫眼电影</h3>
                     <span></span>
                 </div>
-                <p>美团账户注册</p>
+                <p className='meituan'>美团账户注册</p>
               
                     <input type='text' placeholder='手机号码' name='phone' id='phone' ref='phone1'/>
                     <input type='password' placeholder='密码' name='password' id='pswd' ref='psd1'/>

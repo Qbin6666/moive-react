@@ -95,7 +95,7 @@ const mapDispatchToProps = (dispatch, ownprops) => {
       obj.data = arrCity;
       var objCity = JSON.stringify(obj);
       localStorage.setItem('hostryCity', objCity);
-      ownprops.history.replace('/')
+      ownprops.history.replace('/home')
     },
     Scroll: (val) => {
       document.documentElement.scrollTop = document.getElementById(val).offsetTop;

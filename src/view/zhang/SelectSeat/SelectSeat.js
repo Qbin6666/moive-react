@@ -133,7 +133,7 @@ const mapStateToProps = ({ SelectSeat }) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch,ownprops) => {
   return {
     itemshow: (a,b)=>{
       //console.log(111)
@@ -157,6 +157,8 @@ const mapDispatchToProps = (dispatch) => {
     //   seatitem1.style.display = 'none'
     // }
     next: ()=>{
+      console.log(ownprops)
+      ownprops.history.replace('/order')
       localStorage.setItem('ordertime', '14:59')
     }
   }

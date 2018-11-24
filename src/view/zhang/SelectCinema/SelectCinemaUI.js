@@ -12,7 +12,7 @@ const SelectCinemaUI = (props) => {
         <header>
 
           <h1>
-            <NavLink to={'/'}>
+            <NavLink to={'/home'}>
               <span className="iconfont icon-fanhui-copy"></span>
             </NavLink>
             {props.movie.nm}
@@ -28,9 +28,11 @@ const SelectCinemaUI = (props) => {
             <p>{props.movie.src}/{props.movie.dur}分钟</p>
             <p>{props.movie.rt}大陆上映</p>
           </div>
-          <div className='arrow-g'>
-            <img src={return1} alt=''/>
-          </div>
+          <NavLink to={`/preview/${props.location.pathname.split('/')[2]}`}>
+            <div className='arrow-g'>
+              <img src={return1} alt=''/>
+            </div>
+          </NavLink>
         </div>
         <div className='showdays'>
           <ul>

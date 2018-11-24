@@ -2,7 +2,7 @@
   background: #ffffff;
   .list {
     position: fixed;
-    width: 3.63rem;
+    width: 100%;
     height: 0.41rem;
     background: #fff;
     border-bottom: 1px solid #F0F0F0;
@@ -10,6 +10,7 @@
     justify-content: space-around;
     align-items: center;
     color:#777777;
+    top:0.5rem;
     div {
       position: relative;
       text-align: center;
@@ -35,10 +36,12 @@
       height: 4.5rem;
       position: fixed;
       background: #fff;
+      top: 0.5rem;
       ul{
       display: flex;
       // width: 100%;
-      width: 3.58rem;
+      width: 3.76rem;
+      height: 0.44rem;
       li{
         flex: 1;
         text-align: center;
