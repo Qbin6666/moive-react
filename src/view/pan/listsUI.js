@@ -15,7 +15,7 @@ const Lists = (props) => {
           props.List.movieList.map((item, index) => {
             return (
               <li key={index}>
-                <NavLink to={`/?movie=${item.id}`}>
+                <NavLink to={`/SelectCinema/${item.id}`}>
                   <div className="main-block-img">
                     <img src={item.img} alt="" />
                   </div>

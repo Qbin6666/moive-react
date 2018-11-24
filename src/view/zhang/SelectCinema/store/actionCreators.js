@@ -43,20 +43,12 @@ export const initMovieAsync = (pid) => {
     // dispatch store.dispatch 一个引用
     // getState store.getState 一个引用
     const apiProxy = 'https://bird.ioliu.cn/v1/?url='
-    var url = 'http://m.maoyan.com/ajax/movieOnInfoList?token=8aU63jAYtekkXa3DaNHnVnB8GTIAAAAAbAcAAHOz1V9TvLy7wOFmbEGDq3kZedNjP3j9f4-PtwHFastvJTDtmq7xJCd9HH3ioGEaJA'
-    axios.get(apiProxy + url,{
-      params:{
-        pid:pid
-      }
-    }).then(result=>{
-      var movieList = result.data.movieList
-      for(var i=0;i<movieList.length;i++){
-        movieList[i].img = movieList[i].img.split('w.h').join('128.180')
-        if(parseInt(pid) === movieList[i].id){
-          dispatch(initMovie(movieList[i]))
-        }
-      }
-
+    var url = `m.maoyan.com/ajax/detailmovie?movieId=${pid}`
+    axios.get(apiProxy + url).then(result=>{
+      var movieList = result.data.detailMovie
+      console.log(movieList)
+      movieList.img = movieList.img.split('w.h').join('128.180')
+      dispatch(initMovie(movieList))
     });
   }
 }

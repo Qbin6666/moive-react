@@ -43,14 +43,14 @@ export const ScreenListM = (list) => {
     list.coming[i].comingTitle = list.coming[i].comingTitle.split(' ')[0]
   }
   let day = list.coming[0].comingTitle
-  list.coming[0].comingTitle = list.coming[0].comingTitle + list.coming[0].showInfo.split(" ")[1].substr(1, 2)
+
   for (let j = 1; j < list.coming.length; j++) {
     console.log()
     if (list.coming[j].comingTitle === day) {
       list.coming[j].comingTitle = ""
     } else {
       day = list.coming[j].comingTitle
-      list.coming[j].comingTitle = list.coming[j].comingTitle + list.coming[j].showInfo.split(" ")[1].substr(1, 2)
+
     }
   }
   return {

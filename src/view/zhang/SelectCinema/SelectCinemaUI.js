@@ -1,5 +1,6 @@
 // 这个是 home ui 组件
 import React , {Fragment} from 'react';
+import { NavLink } from 'react-router-dom';
 import './SelectCinema.scss';
 import return1 from './images/return.png';
 // import duye from './images/duye.jpg';
@@ -11,7 +12,9 @@ const SelectCinemaUI = (props) => {
         <header>
 
           <h1>
-            <span className="iconfont icon-fanhui-copy"></span>
+            <NavLink to={'/'}>
+              <span className="iconfont icon-fanhui-copy"></span>
+            </NavLink>
             {props.movie.nm}
           </h1>
         </header>
@@ -19,10 +22,10 @@ const SelectCinemaUI = (props) => {
           <img src={props.movie.img} alt=''/>
           <div className='content'>
             <h1>{props.movie.nm}</h1>
-            <p>Venom</p>
-            <p className='pingfen'>{props.movie.sc}  <span>(65.8万人评)</span></p>
-            <p>动作,惊悚,科幻<img src={imax} alt=''/></p>
-            <p>{props.movie.star}</p>
+            <p>{props.movie.enm}</p>
+            <p className='pingfen'>{props.movie.sc}  <span>({(props.movie.snum/10000).toFixed(1)}万人评)</span></p>
+            <p>{props.movie.cat}<img src={imax} alt=''/></p>
+            <p>{props.movie.src}/{props.movie.dur}分钟</p>
             <p>{props.movie.rt}大陆上映</p>
           </div>
           <div className='arrow-g'>
@@ -31,13 +34,13 @@ const SelectCinemaUI = (props) => {
         </div>
         <div className='showdays'>
           <ul>
-            <li>今天11月20日</li>
-            <li>今天11月20日</li>
-            <li>今天11月20日</li>
-            <li>今天11月20日</li>
-            <li>今天11月20日</li>
-            <li>今天11月20日</li>
-            <li>今天11月20日</li>
+            <li>今天11月24日</li>
+            <li>明天11月25日</li>
+            <li>后天11月26日</li>
+            <li>周二11月27日</li>
+            <li>周三11月28日</li>
+            <li>周四11月29日</li>
+            <li>周五11月30日</li>
           </ul>
         </div>
         <div className='nav-warp'>
@@ -47,7 +50,7 @@ const SelectCinemaUI = (props) => {
         </div>
         {
         props.list.map((item,index) => (
-        <div className='list-warp'>
+        <div className='list-warp' key={index}>
           <div className='list-item'>
             <div className='title'>
               <div className='title-top'>
