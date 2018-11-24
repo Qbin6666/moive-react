@@ -27,8 +27,13 @@ class Home extends Component {
   }
   hand() {
     clearTimeout(this.state.timer);
+    let t = 0
     let timer = setTimeout(() => {
-      let t = this.props.page;
+      if( localStorage.getItem('t')){
+        t = localStorage.getItem('t')
+      }else {
+        t = this.props.page;
+      }
       localStorage.setItem('t',t)
       var scrollTop = window.scrollY;
       if (document.getElementById('main-ul')) {
