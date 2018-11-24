@@ -1167,8 +1167,8 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
 
 antd-mobile@^2.2.6:
   version "2.2.6"
-  resolved "http://registry.npm.taobao.org/antd-mobile/download/antd-mobile-2.2.6.tgz#05c4aea76bfc7219949558fafc6abbfe53864f98"
-  integrity sha1-BcSup2v8chmUlVj6/Gq7/lOGT5g=
+  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.2.6.tgz#05c4aea76bfc7219949558fafc6abbfe53864f98"
+  integrity sha512-E09BQ9YTExluOZM24j26p0evht5147K6OVzQCfnOAvPeuNXjDHADOJd2Qmaq1RFylP/pEPT1nxDH/eSsna9Psw==
   dependencies:
     array-tree-filter "~2.1.0"
     babel-runtime "6.x"
@@ -8571,7 +8571,6 @@ redent@^1.0.0:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
 
-<<<<<<< HEAD
 redux-logger@^3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/redux-logger/-/redux-logger-3.0.6.tgz#f7555966f3098f3c88604c449cf0baf5778274bf"
@@ -8579,8 +8578,6 @@ redux-logger@^3.0.6:
   dependencies:
     deep-diff "^0.3.5"
 
-=======
->>>>>>> 8c84beb93b4e5c37d6ec45f86971d2cc62495a07
 redux-thunk@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"

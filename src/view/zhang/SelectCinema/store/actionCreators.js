@@ -1,7 +1,7 @@
 // 这个文件就是一些 动作生成器 （action creator） 的  集合
 import { INIT_LIST, INIT_MOVIE} from './actionTypes';
 import axios from 'axios';
-
+import {Toast} from 'antd-mobile'
 /**
  * 初始化的一个 动作生成器
  * @param {Array} list 初始化的数据
@@ -43,20 +43,13 @@ export const initMovieAsync = (pid) => {
     // dispatch store.dispatch 一个引用
     // getState store.getState 一个引用
     const apiProxy = 'https://bird.ioliu.cn/v1/?url='
-    var url = 'http://m.maoyan.com/ajax/movieOnInfoList?token=8aU63jAYtekkXa3DaNHnVnB8GTIAAAAAbAcAAHOz1V9TvLy7wOFmbEGDq3kZedNjP3j9f4-PtwHFastvJTDtmq7xJCd9HH3ioGEaJA'
-    axios.get(apiProxy + url,{
-      params:{
-        pid:pid
-      }
-    }).then(result=>{
-      var movieList = result.data.movieList
-      for(var i=0;i<movieList.length;i++){
-        movieList[i].img = movieList[i].img.split('w.h').join('128.180')
-        if(parseInt(pid) === movieList[i].id){
-          dispatch(initMovie(movieList[i]))
-        }
-      }
-
+    var url = `m.maoyan.com/ajax/detailmovie?movieId=${pid}`
+    axios.get(apiProxy + url).then(result=>{
+      Toast.hide()
+      var movieList = result.data.detailMovie
+      console.log(movieList)
+      movieList.img = movieList.img.split('w.h').join('128.180')
+      dispatch(initMovie(movieList))
     });
   }
 }
