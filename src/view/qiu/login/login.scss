@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+    justify-content:space-around;
+    h3{
+        color: #ffffff;
+    }
+}
+body,html{
+    width: 100%;
+    height:100%;
+}
+p{
+    height:0.55rem;
+    line-height: 0.55rem;
+    text-align: center;
+    color: red;
+    box-sizing: border-box;
+
+}
+input{
+    border: 0;
+    outline: none;
+
+}
+
+    #phone{
+    height:0.5rem;
+    border: 1px solid #cccccc;
+    // padding: 0 0.2rem;
+    box-sizing: border-box;
+    width:100%;
+    }
+    #pswd{
+        height:0.5rem;
+        border: 1px solid #cccccc;
+        // padding: 0 0.2rem;
+        box-sizing: border-box;
+        width:100%;
+        }
+    
+
+button{
+    border: 0;
+}
+.btn{
+    height:0.5rem;
+    background: red;
+    color: #ffffff;
+    text-align: center;
+    line-height: 0.5rem;
+    display: block;
+    box-sizing: border-box;
+    width:100%;
+    margin-top: 0.2rem;
+    border-radius:0.2rem; 
+}
+.tijiao{
+    display:flex;
+    justify-content: space-around;margin-top: 0.2rem;
+}

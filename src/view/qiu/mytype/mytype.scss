@@ -1,0 +1,113 @@
+.navbar{
+    height: 0.505rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.505rem;
+    background: #e54847;
+    border-bottom: 1px solid #e54847;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    position: relative;
+    font-size: 0.16rem;
+    font-weight: 800;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.heades{
+    background: #f76d68;
+    height: 1.5rem;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    div{
+        width:0.66rem;
+        height:0.66rem;
+        background:#fff;
+        position: absolute;
+        // left:50%;
+        overflow: hidden;
+       top:20%;
+        margin: auto;
+        border-radius:50%; 
+        img{
+            width:0.66rem;
+        height:0.66rem;
+        }
+    }
+ 
+}
+.orders{
+    padding: 0 0.15rem;
+    margin-top: 10px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    .title{
+    position: relative;
+    margin: 0.13rem 0 0;
+    font-size:0.15rem;;
+    line-height:0.21rem;
+    height: 0.21rem;
+    color: #333;
+    z-index: 9;
+    display: inline-block;
+    width: 80px;
+    background-color: #fff;
+    }
+    .title-line{
+        position: absolute; 
+    top: 0.23rem;
+    left: 50%;
+    margin-left: -0.8remx;
+    width: 1.6rem;
+    height: 0.01rem;
+    }
+    .list{
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .mv{
+            width:1.85rm;
+            height:0.9rem;
+            display:flex ;
+            flex-direction: column;
+            img{
+                width:0.4rem;
+                height:0.4rem;
+            }
+            i{
+                display: block;
+                margin-top: 0.1rem;
+            }
+        }
+        .stroe{
+            width:1.85rm;
+            height:0.9rem;
+            display:flex ;
+            flex-direction: column;
+            img{
+                width:0.4rem;
+                height:0.4rem;
+            }
+            i{
+                display: block;
+                margin-top: 0.1rem;
+            }
+        }
+    }
+}
+.coupon{
+    background: #fff;
+    margin-top:0.2rem;
+    overflow: hidden; 
+    .item{
+        height:0.44rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 .2rem;
+        width:100%;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+    }
+}
