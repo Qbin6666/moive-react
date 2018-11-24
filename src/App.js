@@ -13,6 +13,7 @@ import Screen from './view/pan/Screen/Screen'
 import Cinema from './view/sun/cinema/Cinema'
 // import ThreeLevel from './components/ThreeLevel/ThreeLevel'
 import City from './view/pan/City/City'
+import Order from './view/pan/Order/Order'
 
 const App = () => {
   // console.log(store)
@@ -29,6 +30,7 @@ const App = () => {
           <Route path='/' exact component={List} />
           <Route path='/screen' component={Screen} />
           <Route path='/city' component={City} />
+          <Route path='/order' component={Order} />
         </Fragment>
       </Router>
    </Provider>

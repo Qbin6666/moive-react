@@ -9,7 +9,9 @@ const defaultState = {
   CityList: [],  //城市列表
   isShow: [],
   page: 0,
-  pageList: 0
+  pageList: 0,
+  ordertime: '',
+  scheigthNum: 0
 }
 
 export default (state = defaultState, action) => {
@@ -32,8 +34,7 @@ export default (state = defaultState, action) => {
     let newState = JSON.parse(JSON.stringify(state))
     // console.log(action.list )
     newState.ScreenListM = action.list.coming;
-    newState.ScreenPagingM = action.list.movieIds
-;
+    newState.ScreenPagingM = action.list.movieIds;
     // console.log(newState.ScreenListM)
     return newState;
   }
@@ -56,14 +57,37 @@ export default (state = defaultState, action) => {
 
   if (action.type === PAGEADD) {
     let newState = JSON.parse(JSON.stringify(state));
+    // let num = (String(newState.movieIds.length)).substr(0, 1)
+    // console.log(state.page)
     newState.page = state.page+1;
     return newState
   }
+  // NEWPAGEADD
+  if (action.type === 'NEWPAGEADD') {
+    let newState = JSON.parse(JSON.stringify(state));
+    newState.page = 0;
+    return newState
+  }
+
   if (action.type === PAGEADDLIST) {
     let newState = JSON.parse(JSON.stringify(state));
+
     newState.pageList = state.pageList + 1;
     return newState
   }
+  if (action.type === 'ORDERTIME') {
+    // console.log(5555555)
+    let newState = JSON.parse(JSON.stringify(state));
+    newState.ordertime = action.ordertime
+    return newState
+  }
+  if (action.type === 'SCHEIGTH') {
+    // console.log(5555555)
+    let newState = JSON.parse(JSON.stringify(state));
+    newState.scheigthNum = action.sc
+    return newState
+  }
+
 
   return state
 }
