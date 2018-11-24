@@ -2,3 +2,7 @@ export const INIT_LIST = 'INIT_LIST';
 export const INIT_LIST_SCREEN = 'INIT_LIST_SCREEN';
 export const INIT_LIST_SCREEN_LIST = 'INIT_LIST_SCREEN_LIST';
 export const INIT_LIST_TWO = 'INIT_LIST_TWO';
+export const CITY_LIST = 'CITY_LIST';
+export const INIT_LIST_SCREEN_TWO = 'INIT_LIST_SCREEN_TWO';
+export const PAGEADD = 'PAGEADD';
+export const PAGEADDLIST = 'PAGEADDLIST';

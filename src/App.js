@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { HashRouter as Router, Route,NavLink } from 'react-router-dom';
+import { HashRouter as Router, Route} from 'react-router-dom';
 import store from './store';
 import { Provider } from 'react-redux';
 
@@ -10,10 +10,10 @@ import SelectSeat from './view/zhang/SelectSeat/SelectSeat';
 // import HomeUI from '../src/view/pan/HomeUI';
 import List from './view/pan/lists'
 import Screen from './view/pan/Screen/Screen'
-
-
 import Cinema from './view/sun/cinema/Cinema'
-import ThreeLevel from './components/ThreeLevel/ThreeLevel'
+// import ThreeLevel from './components/ThreeLevel/ThreeLevel'
+import City from './view/pan/City/City'
+import Order from './view/pan/Order/Order'
 
 const App = () => {
   // console.log(store)
@@ -21,14 +21,16 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
-          <Route path="/SelectCinema/42964" component={SelectCinema} />
+          <Route path="/SelectCinema/:id" component={SelectCinema} />
           <Route path="/SelectSeat" component={SelectSeat} />
           {/* <h1>lalalallalal</h1> */}
-          {/* <HomeUI></HomeUI> */}
           {/* <ThreeLevel></ThreeLevel> */}
           <Route path='/cinema' component={Cinema}></Route>
+          {/* <HomeUI></HomeUI> */}
           <Route path='/' exact component={List} />
           <Route path='/screen' component={Screen} />
+          <Route path='/city' component={City} />
+          <Route path='/order' component={Order} />
         </Fragment>
       </Router>
    </Provider>
