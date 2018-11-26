@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './order.scss';
 
 const OrderUI = (props) => {
-  // console.log(props.ordertime)
+  console.log(props.phone)
   return (
     <div className="order">
       <div className="navbar">
@@ -33,7 +33,7 @@ const OrderUI = (props) => {
       <div className='movie-line'></div>
       <div className='pay-info'>
         <div className='discount'><span>活动与低佣卷</span><span>无可用</span></div>
-        <div className='discount'><span>手机号码</span><span>15586587954</span></div>
+        <div className='discount'><span>手机号码</span><span>{ props.phone ? props.phone:'' }</span></div>
         <div className='discount' id='last-dis'>
         <span>小计</span>
         <span>

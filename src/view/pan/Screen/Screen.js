@@ -24,7 +24,6 @@ class Screen extends Component {
     store.dispatch( screenAsyac() )
     store.dispatch( screenListAsyac() )
       window.addEventListener('scroll', this.handList)
-    localStorage.setItem('ordertime', '14:20')
   }
   handList() {
     clearTimeout(this.state.timer);

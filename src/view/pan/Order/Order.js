@@ -15,8 +15,14 @@ class Order extends Component {
     )
   }
   componentWillMount() {
-    if(!localStorage.getItem('ordertime')) {
+    if(!localStorage.getItem('ordertime') ) {
       this.props.history.push('/')
+    }
+
+
+    if(! localStorage.getItem('phone') ) {
+      this.props.history.push('/')
+      // console.log(phone)
     }
 
     if (localStorage.getItem('ordertime') === '00:00' ){
@@ -24,7 +30,7 @@ class Order extends Component {
     }
   }
   componentDidMount() {
-    // console.log(localStorage.getItem('ordertime') )
+ 
     if (localStorage.getItem('ordertime')) {
     var timer = setInterval(() => {
         var time = localStorage.getItem('ordertime').split(":")
@@ -57,9 +63,14 @@ class Order extends Component {
 
 //输入
 const mapStateToProps =({List}) => {
+  if( localStorage.getItem('phone') ) {
+    var phone = localStorage.getItem('phone')
+    // console.log(phone)
+  }
   return {
     List:List,
-    ordertime: List.ordertime
+    ordertime: List.ordertime,
+    phone:phone
   }
 }
 
