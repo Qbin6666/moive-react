@@ -5,7 +5,7 @@ import ThreeLevel from '../../../components/ThreeLevel/ThreeLevel'
 
 const CinemaUI = (props) => {
   // props.cityCinema.cinemas
-  console.log(props.cityCinema);
+  console.log(props);
   return (
     <Fragment>
       <ThreeLevel></ThreeLevel>

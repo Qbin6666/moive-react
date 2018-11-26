@@ -14,6 +14,7 @@ import Screen from './view/pan/Screen/Screen'
 
 import Cinema from './view/sun/cinema/Cinema'
 import ThreeLevel from './components/ThreeLevel/ThreeLevel'
+import Show from './view/sun/show/Show';
 
 const App = () => {
   // console.log(store)
@@ -26,9 +27,10 @@ const App = () => {
           {/* <h1>lalalallalal</h1> */}
           {/* <HomeUI></HomeUI> */}
           {/* <ThreeLevel></ThreeLevel> */}
-          <Route path='/cinema' component={Cinema}></Route>
           <Route path='/' exact component={List} />
+          <Route path='/cinema' component={Cinema} />
           <Route path='/screen' component={Screen} />
+          <Route path='/show' component={Show} />
         </Fragment>
       </Router>
    </Provider>

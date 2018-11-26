@@ -18,10 +18,11 @@ import store from '../../../store/index'
     }
     componentDidMount() {
       store.dispatch(setCityCinecma());
+      // console.log(this.props);
     }
   }
   const mapStateToProps = ({Cinema}) => {
-    // console.log(Cinema.cityCinema)
+    console.log(Cinema)
     return {
       cityCinema: Cinema.cityCinema
     }

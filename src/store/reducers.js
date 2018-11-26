@@ -4,13 +4,15 @@ import { combineReducers } from 'redux';
 import SCReducer from '../view/zhang/SelectCinema/store/reducers';
 import CinemaReducer from '../view/sun/cinema/store/reducer';
 import List from '../view/pan/store/reducer.js'
+import ShowList from '../view/sun/show/store/reducer'
 
 
 
 let zongdeReducers = combineReducers({
   SelectCinema: SCReducer,
   Cinema: CinemaReducer,
-  List
+  List,
+  ShowList
 })
 
 // console.log(zongdeReducers);

@@ -44,6 +44,12 @@ class ThreeLevel extends Component {
     return (
       <Fragment>
         <div className='threelevel'>
+          <div className="zoomBox">
+            <div className="zoom">
+              <div className='city'>深圳</div>
+              <input type="text" placeholder='搜影院'/>
+            </div>
+          </div>
           <div className="listBox">
             <div className="list">
               {
