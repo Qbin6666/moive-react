@@ -5,7 +5,8 @@ import HomeUI from '../HomeUI'
 import Max from "../image/MAX.png"
 import Max3d from '../image/3d.png';
 const Screen = (props) => {
-  // console.log(props.List)
+//   console.log(props.List.ScreenListM
+// )
   return (
     <Fragment>
       <HomeUI></HomeUI>
@@ -33,7 +34,7 @@ const Screen = (props) => {
         </div>
       </div>
       <div className="line"></div>
-      <ul className="main-block">
+      <ul className="main-block" id="list-ul">
         {
           props.List.ScreenListM.map((item, index) => {
             return (
@@ -67,9 +68,7 @@ const Screen = (props) => {
             )
           })
         }
-        <li className="addList" onClick={() => {
-          props.addList(props.List.movieIds)
-        }}>加载更多...</li>
+        <li className="addList">加载更多...</li>
       </ul>
     </Fragment>
   )

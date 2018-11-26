@@ -14,7 +14,5 @@ let zongdeReducers = combineReducers({
   List,
   ShowList
 })
-
 // console.log(zongdeReducers);
-
 export default zongdeReducers;

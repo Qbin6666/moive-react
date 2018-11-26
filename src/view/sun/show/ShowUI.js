@@ -1,14 +1,19 @@
 import React,{Fragment} from 'react';
+import { NavLink } from 'react-router-dom';
 import './show.scss';
 const ShowUI = (props) => {
-  console.log(props)
+  // console.log(props.showItem(0))
   var shows = props.showTime.shows || [];
   return (
     <Fragment>
+      <div className="sheader">
+        <span className="iconfont icon-fanhui-copy" onClick={props.fan}></span>
+        <span>{props.cinemaData.nm}</span>
+      </div>
       <div className='showInfo'>
         <div className="infosite">
-          <h2>德信影城(上亿广场店)</h2>
-          <p>渝水区中山路与赣西大道交汇处上亿广场4楼</p>
+          <h2>{props.cinemaData.nm}</h2>
+          <p>{props.cinemaData.addr}</p>
         </div>
         <div className='icon'>
           1

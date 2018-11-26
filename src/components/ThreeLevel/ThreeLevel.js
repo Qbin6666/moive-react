@@ -44,24 +44,20 @@ class ThreeLevel extends Component {
     return (
       <Fragment>
         <div className='threelevel'>
-          <div className="zoomBox">
-            <div className="zoom">
-              <div className='city'>深圳</div>
-              <input type="text" placeholder='搜影院'/>
-            </div>
+          <div className="zoom">
+            <div className='city-s'>深圳</div>
+            <input type="text" placeholder='搜影院'/>
           </div>
-          <div className="listBox">
-            <div className="list">
-              {
-                this.state.list.map((item, index) => {
-                  return (
-                    <div className={item.name} onClick={() => { this.changeActive(index) }} key={index}>{item.info}
-                      <span className={item.active ? 'active angle' : 'angle'}></span>
-                    </div>
-                  )
-                })
-              }
-            </div>
+          <div className="list">
+            {
+              this.state.list.map((item, index) => {
+                return (
+                  <div className={item.name} onClick={() => { this.changeActive(index) }} key={index}>{item.info}
+                    <span className={item.active ? 'active angle' : 'angle'}></span>
+                  </div>
+                )
+              })
+            }
           </div>
           <div className={this.state.list[0].active ? 'allCityList' : 'none'}>
             <ul>

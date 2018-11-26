@@ -1,5 +1,7 @@
 .main-block {
   padding-left: 0.14rem;
+  // margin-top: 0.5rem;
+  background: #fff;
   li {
     a {
       display: flex;
@@ -30,6 +32,7 @@
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
+                padding: 0.02rem 0;
                 padding-right: 0.05rem;
             }
             span {

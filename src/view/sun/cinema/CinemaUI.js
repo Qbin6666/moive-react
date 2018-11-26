@@ -12,8 +12,8 @@ const CinemaUI = (props) => {
       <div className='cinema'>
         <ul>
           {
-            props.cityCinema.map((item,index) => {
-              return(
+            props.cityCinema.map((item, index) => {
+              return (
                 <li className='cinema-item' key={index}>
                   <a href="#">
                     <h2>{item.nm} <i>{item.sellPrice}</i><span>元起</span></h2>
@@ -27,7 +27,7 @@ const CinemaUI = (props) => {
                       <div className='hallType'>杜比全景声厅</div>
                     </div>
                     <p className={item.promotion.cardPromotionTag ? 'sale' : 'none'}>
-                    <img src={sale} alt="" />{item.promotion.cardPromotionTag}</p>
+                      <img src={sale} alt="" />{item.promotion.cardPromotionTag}</p>
                   </a>
                 </li>
               )

@@ -4,6 +4,7 @@ import { setShowList ,showTime } from './store/actionCreators'
 import { connect } from 'react-redux';
 import store from '../../../store';
 
+let id = '';
 class Show extends Component {
   render(){
     return(
@@ -13,7 +14,8 @@ class Show extends Component {
     )
   }
   componentDidMount() {
-   store.dispatch(setShowList());
+    id = this.props.location.pathname.split('/')[2];
+    store.dispatch(setShowList(id));
   }
 
 }
@@ -30,10 +32,11 @@ const mapStateToProps = ({ShowList}) => {
   return {
     ShowList:ShowList.showList,
     showTime: ShowList.showTime,
+    cinemaData: ShowList.cinemaData,
     plist: ShowList.plist
   }
 }
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch, ownprops) => {
   return {
     showItem : (index,img) => {
       var li = document.getElementsByName('showItem');
@@ -45,7 +48,8 @@ const mapDispatchToProps = (dispatch) => {
       }
       li[index].classList.add('target');
       ul.style.transform = `translateX(${1.4 - index * 0.7}rem)`;
-      store.dispatch(showTime(index));
+      store.dispatch(showTime(index,id));
+      // console.log(mapDispatchToProps().setPlist())
     },
     setPlist :(lists,index) => {
       var dateShow = document.getElementsByClassName('dateShow');
@@ -57,6 +61,10 @@ const mapDispatchToProps = (dispatch) => {
         type:'SET_PLIST',
         plist:lists
       })
+    },
+    fan: () => {
+      console.log(ownprops);
+      ownprops.history.goBack();
     }
   }
 }

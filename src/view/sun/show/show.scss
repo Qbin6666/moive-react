@@ -1,3 +1,18 @@
+.sheader {
+  width: 100%;
+  height: 0.5rem;
+  background: #f03d37;
+  display: flex;
+  align-items: center;
+  span {
+    color: #fff;
+    font-size:0.18rem;
+  }
+  span.icon-fanhui-copy {
+    padding:0 0.1rem;
+    font-size:0.22rem;
+  }
+}
 .showInfo {
   display: flex;
   justify-content: space-between;
@@ -9,6 +24,11 @@
     p{
       margin-top: 0.1rem;
       color:#999999;
+      width: 3rem;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      // background: goldenrod;
+      white-space: nowrap;
     }
   }
   .icon {
@@ -75,7 +95,9 @@
     }
   }
 }
-.session-nav {
+.session {
+  background: #fff;
+  .session-nav {
   display: flex;
   .dateShow{
     width: 0.9rem;
@@ -83,103 +105,104 @@
     font-size:0.14rem;
     line-height: 0.44rem;
     margin: 0 0.2rem 0 0.1rem;
+    }
   }
-}
-.seesion-items {
-  .plist {
-    padding: 0.17rem 0;
-    margin-left: 0.125rem;
-    border-bottom: 1px solid #F0F0F0;
-    .box-flex {
-      display: flex;
-      padding-right: 0.125rem;
-      // justify-content: space-around;
-      .time-block {
-        .begin {
-          font-size:0.2rem;
-        }
-        .end {
-          font-size:0.12rem;
-          color:#999;
-          margin-top:0.1rem;
-        }
-      }
-      .info-block {
-        margin-left: 0.17rem;
-        width: 0.9rem;
-        .lan {
-          margin-top: 0.02px;
-          line-height: 0.18rem;
-          font-size: 0.13rem;
-          color: #333;
-          white-space: normal;
-        }
-        .hall {
-          margin-top: 0.1rem;
-          font-size: 0.11rem;
-          color: #999;
-          white-space: normal;
-        }
-      }
-      .price {
-        width: 1.3rem;
-        margin-left: 0.05rem;
-        .sellPr {
-          display: inline-block;
-          line-height: 1;
-          color: #f03d37;
-          margin-top: 0.01rem;
-          font-size: 0.19rem;
-        }
-        .vipPrice {
-          display: inline-block;
-          line-height: 0.15rem;
-          height: 0.15rem;
-          -webkit-transform: scale(.8);
-          transform: scale(.8);
-          -webkit-transform-origin: left;
-          transform-origin: left;
-          margin-right: -0.16rem;
-          border: 1px solid #ff9000;
-          border-radius: 2px;
-          font-size: 0.12rem;
-          .icon,.num {
-              display: inline-block;
-              padding: 0 0.02rem;
+  .seesion-items {
+    .plist {
+      padding: 0.17rem 0;
+      margin-left: 0.125rem;
+      border-bottom: 1px solid #F0F0F0;
+      .box-flex {
+        display: flex;
+        padding-right: 0.125rem;
+        // justify-content: space-around;
+        .time-block {
+          .begin {
+            font-size:0.2rem;
           }
-          .icon {
+          .end {
+            font-size:0.12rem;
+            color:#999;
+            margin-top:0.1rem;
+          }
+        }
+        .info-block {
+          margin-left: 0.17rem;
+          width: 0.9rem;
+          .lan {
+            margin-top: 0.02px;
+            line-height: 0.18rem;
+            font-size: 0.13rem;
+            color: #333;
+            white-space: normal;
+          }
+          .hall {
+            margin-top: 0.1rem;
+            font-size: 0.11rem;
+            color: #999;
+            white-space: normal;
+          }
+        }
+        .price {
+          width: 1.3rem;
+          margin-left: 0.05rem;
+          .sellPr {
+            display: inline-block;
+            line-height: 1;
+            color: #f03d37;
+            margin-top: 0.01rem;
+            font-size: 0.19rem;
+          }
+          .vipPrice {
+            display: inline-block;
+            line-height: 0.15rem;
+            height: 0.15rem;
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+            -webkit-transform-origin: left;
+            transform-origin: left;
+            margin-right: -0.16rem;
+            border: 1px solid #ff9000;
+            border-radius: 2px;
+            font-size: 0.12rem;
+            .icon,.num {
+                display: inline-block;
+                padding: 0 0.02rem;
+            }
+            .icon {
+              color: #fff;
+              background-color: #f90;
+            }
+            .num {
+              color: #f90;
+              background-color: #fff;
+            }
+          }
+          .extraDesc {
+            margin-top: 0.1rem;
+            display: block;
+            font-size: 0.11rem;
+            color: #999;
+          }
+        }
+        .button-block {
+          width: 0.45rem;
+          margin-left: 0.02rem;
+          position: relative;
+          .button {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 100%;
+            height: 27px;
+            line-height: 28px;
+            font-size: 12px;
+            background-color: #f03d37;
             color: #fff;
-            background-color: #f90;
+            border-radius: 4px;
+            text-align: center;
           }
-          .num {
-            color: #f90;
-            background-color: #fff;
-          }
-        }
-        .extraDesc {
-          margin-top: 0.1rem;
-          display: block;
-          font-size: 0.11rem;
-          color: #999;
-        }
-      }
-      .button-block {
-        width: 0.45rem;
-        margin-left: 0.02rem;
-        position: relative;
-        .button {
-          position: absolute;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-          width: 100%;
-          height: 27px;
-          line-height: 28px;
-          font-size: 12px;
-          background-color: #f03d37;
-          color: #fff;
-          border-radius: 4px;
-          text-align: center;
         }
       }
     }

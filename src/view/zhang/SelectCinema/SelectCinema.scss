@@ -12,10 +12,12 @@ header{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    margin: 0!important;
     .icon-fanhui-copy{
       position: absolute;
       font-size: 0.35rem;
       left: 0;
+      color: #fff;
     }
   }
 }
@@ -47,6 +49,7 @@ header{
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      margin: 0!important;
     }
     .pingfen{
       font-size: 0.18rem;
@@ -141,6 +144,7 @@ header{
   }
 }
 .list-warp{
+  background: #fff;
   .list-item{
     padding: 0.13rem 0.15rem 0.13rem 0;
     margin-left: 0.15rem;
